@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://www.pthc.org.tw/ -->
+<html lang="zh-tw" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" xmlns="http://www.w3.org/1999/xhtml" style=""><head id="ctl00_PageHead"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>
+	天母感恩堂
+</title>
+<!--uc:eZHeadMeta-->
+<!-- for Google -->
+
+<meta id="ctl00_eZHeadMeta1_description" name="description" content="屏東聖教會是一個充滿熱情與愛的教會，弟兄姊妹間彼此的關懷、服事、接納、祝福以及小組家庭的連結，陪伴來到教會的朋友「從門外到門內、從信徒到門徒、從得救到得勝」。">
+<meta id="ctl00_eZHeadMeta1_keywords" name="keywords" content="屏東聖教會,PTHC,屏東教會,聖教會">
+<meta name="author" content="本網站由【藝誠科技有限公司】設計與製作">
+<meta name="copyright" content="XXX 版權所有. CopyRight © XXX All Rights Reserved.">
+<meta name="application-name" content="">
+
+
+
+
+
+
+<!-- 關閉Skype工具列 -->
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+
+<!--uc:eZHeadPageRes-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./grace_church_files/bootstrap.min.css" rel="stylesheet">
+	<link href="./grace_church_files/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="./grace_church_files/base.css" rel="stylesheet">
+    <link href="./grace_church_files/base_rwd.css" rel="stylesheet">
+    
+    <link href="./grace_church_files/style.css" rel="stylesheet">
+    
+    <link href="./grace_church_files/style_rwd.css" rel="stylesheet">
+    <link href="./grace_church_files/style(1).css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="./grace_church_files/analytics.js.下載"></script><script type="text/javascript" src="./grace_church_files/jquery-1.8.3.js.下載"></script>
+    <script type="text/javascript" src="./grace_church_files/jquery.easing.1.3.js.下載"></script>
+    <script type="text/javascript" src="./grace_church_files/bootstrap.js.下載"></script>
+	<script type="text/javascript" src="./grace_church_files/moment.min.js.下載"></script>
+	<script type="text/javascript" src="./grace_church_files/bootstrap-datetimepicker.min.js.下載"></script>
+	
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //指定uc col
+            $(".side2 .wid").addClass("col-lg-12 col-md-4 col-sm-4");
+            $(".side2 .wid-slideBanner").removeClass("col-md-4 col-sm-4").addClass("col-md-8 col-sm-8");
+
+            //check ie
+            if ($.browser.msie && $.browser.version <= "8.0") {
+                $('body').addClass('is_oldie');
+                // please upgrade your browser
+            }
+            if (Modernizr.touch) {
+                $("body").addClass("is_touch");
+            }
+
+            $(window).scroll(function (e) {
+                var win_h = $(window).scrollTop();
+                var win_w = $(window).width();
+                var page_w = $(".main_content > .container").width();
+                var floating_offset_top = $(".header").height() + $(".main_top").height();
+                if (win_h > floating_offset_top) {
+                    $("#floating").addClass("fixed");
+                } else {
+                    $("#floating").removeClass("fixed");
+                }
+
+            });
+
+            $('.btn-floating').click(function (e) {
+                e.preventDefault();
+                $('#floating').toggleClass("open");
+            });
+
+            if ($(window).width() < 975 && $('.side1 .collapse').hasClass('in')) {
+                $('#side1collapse').collapse('hide');
+            }
+            $(window).resize(function () {
+                //console.log($(window).width());
+                if ($(window).width() >= 975 && !$('.side1 .collapse').hasClass('in')) {
+                    $('#side1collapse').collapse('show');
+                } else if ($(window).width() < 975 && $('.side1 .collapse').hasClass('in')) {
+                    $('#side1collapse').collapse('hide');
+                }
+            });
+          
+        });
+			//datetimepicker
+			var datefield=document.createElement("input");
+			datefield.setAttribute("type", "date");
+			if (datefield.type!="date"){ 
+				$(function($){ //on document.ready
+				    $('input[type=date]').datetimepicker({ format: 'YYYY/MM/DD' });
+				});
+			}  		
+    </script>
+
+    
+
+
+    
+
+
+<!--uc:eZHeadFinal-->
+    <script src="./grace_church_files/selectivizr.js.下載"></script>
+    <script src="./grace_church_files/html5shiv-3.7.2.js.下載"></script>
+    <script src="./grace_church_files/modernizr-2.6.2-respond-1.1.0.min.js.下載"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./grace_church_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159574522-1');
+</script>
+<script>
+    $(document).ready(function () {
+$(".side .nav > li > a").each(function(){
+if($(this).parent("li").children("ul").length >0){
+$(this).parent("li").addClass("active");
+}
+});
+});
+</script>
+
+<style>
+
+       /*首頁背景*/
+    body.home {
+        
+        
+    }
+
+    /*內頁背景*/
+    body {
+        
+        
+    }
+
+     /*首頁標題區塊背景*/
+    body.home .header{
+        
+        
+    }
+  
+     /*標題區塊背景*/
+    .header {
+       
+       
+    }
+    
+     /*LOGO*/
+    .header .navbar .navbar-header .navbar-brand {
+         background-image: url(./grace_church_files/images/tmgc_logo.png);
+         width: 101px;height: 95px;
+    }
+    .header .wrp-deco.avatar {
+         
+        
+         
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        //以class設定.wrp-deco.avatar的z-index   
+        //選項為:不指定, 在前面, 在後面
+        var avatar_class = ""; /**程式要帶入節慶主題是預設、前或後**/
+        $(".header .wrp-deco.avatar").addClass(avatar_class);
+    });
+</script>
+
+
+</head>
+<body id="ctl00_PageBody" class="home">
+    <form name="aspnetForm" method="post" action="http://www.pthc.org.tw/" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPBdwiSDRzSUFBQUFBQUFFQU9WYTYzTVQxeFVQd3JJZFkrT2tHWncyYWEyVkdvbzhpYVI5NkFsWWxKSTBaZHEwbVlZa2syWXlucFYyTFMxSVdvMTI1UWQ1akF3WURIN3hDRFlFODBwaW5qWFl3UWtPR1B0L2FiUXI2VU5MdnZkRGV1N3VTbHJKa2kxQ21NbE1HYlBleDcyL2MrNjV2M1B1T2ZmNmgzV3R4cWZkSGpkSk9nblMzY3EwR2JyaFVtZFlwMXpYYS9kdGh2YUdJQjhUMlpoby9QYzZhVzVjUGorWEhaaVFUNStWcHc3S1oyNm5GMUpTYWxnYUhKVHZMMmNPejhrSEI3TkRSK1JENXpLZkhWTGJQRndja1JZdlNvT0hwS3ZIcEN2ZjVpWk9TUThXNVprdm9VRnVja28rY3ZlNzFJQThOWnErTjR4dXhxWXo4Nk53azVrK243a3lucjQvTFkwZmsyYkhNMThma201OUk5MmJRYjFTWDJTK1BnNnd1Yk0zMG92ejZhWEQwdENzS2dzSm5ScVd4Z0ZxUkZxNmtKdElTVjlPd0ZkME0zZ1ZZT0ZsZXZteXRIUlNlN2wwVW4wcExVM0twMC9BUzdpUmhzOS9sd0lkRGpCZ2hEYUQ2U25qeTJYRGZ1WE5QWC9hOVlyNlVudFQrTVlZR2xSVGd1SHE5ckI5b3ZGVTNYYXp6WWE5SHVFRGRBUVRPSkhGUkRxRVdVTnd0ZThWT2pENHh2T2hDSXZ0ak5HUmZwRUxDcGpONW05cDJpNEVFMXhjeEdpaFB4YkVoRVN3MHhJV3hiaXcxZUhvN2UyMWg1Uk9BQktsWTNTSVRkaURmTlNCUUIxN2hSMGMwL24yVGh2aDhyazhUaGRKMmdpTGY3dER4U3Npd3gyRzlYSXhodSsxTTdSSS80WHVaeE5ZNThwWEgzMkV2Zi9CTnRTNk94a0xpaHdmdzVBZ2E4ZUhoVGIyZUZJSVcrbEVLQmtGcWdnZDJ6NUd6WlZXVy9ZS1cxN0JZbXd2OWlvdHN0YU9Ea0FxZmdSeWRYTWhhTENsVk9FdHFGa1ZuVEhzSlN2REJ4VlJIZllFU3pQOTFvSm0xZzdzdzVhbWw2d1d1OEF4TEdhUDBUMllINHR3Y0tFdEhYYVdEb1lMaldFRUxVMWN0L1VscXhqbWhBNTduRTRBcE5VUzRhQmxNTXhGR0hpMldwSVJlSXl3c1pBWXh2eDRod0pmb1FQTk1Mc2l0Q0JZTFRTZzk3QVdOQVN3dzhmSzc1THhxTnhxTndaUmUyTmRtSSt5YlFiRjlUWWFqSzJLMTcyVkRMd0o4OG95YlUySVRhWjF4dWNRNzhxNHlLZyt1cUhMdkZ0a283djRaRXcwTkxZOWcxeFp4VVBYMXJZNjZHN1pMc1RwR0thSTdMU0lmYUpON0xYNGMxY21jcGNHUURINDVtL2Y4RmU2aHd2Qk5MMmRpQmpiRU4wMHRzWEZjTkRPSjBKMnNaZGhDc0JxakdodGF3VDRYUlhoc3pkR3N6Tm41S0VUVXVxRUprVGZia3NRRENodThXdWZURWFqNlJOSEhJYnRvQU44VW5RQUU5aytPeTNFKzNic2cvdE9nbXh2M0NVSWlwbU5yVXlDandOVFl6YVJENEV2dE5kMW1kLzZnOEVBOWxqZlEwZU16WHJoRE5oVmNVd3dSdnN6K1o1ZFFqSUFMRXF5cHZYRzU2dEkxdHpaQkVHeHJWR0prZDJ0bTlZVmhhUCtCS1ZOUk1NN25NQUZJbXdZZGRwa2FGOTlNR1VhSW9QV0kvQ1dNTi9ESnJvU1hZakNDVWFid2pXTjQ0UnBhSmFIanVkTzM1VlBEMEpJWmJRWVZtZjRBZjYxTWdiRFdoTE1xMG9nY2RLanlKaTZnZUx1M0dsNTZ0d0tHZXNmVndhRkt6TFVKV2JtcmpUK1ZjVngxRVpBZVNvbFQ4eG1yeDJUQjI3WFJNQTJUVHNJV0lKT09WUDlDcjZaR2hEWFRJM0lIa1VoT3FJWmdGVlY0SXFrcWtQK1habFVUcFZVcGlhTlRac3FRcFZKTDVEb3FhTEZmMU5aQ2RYZ1huVkdFWWI4elJEQ3FNb2FIV1Q3YXBDRU1vUHBoZnZ5NURRc3VKVXcxejh5SnFsanhmeDlhZmowQ3N5NlI4WlVQRWE2Y1RKMzgxUHAwcHcwTzFaUnozS212VnFSYVptalY2WFJsRU5OVjJxaTJscU9RSGhXWTExTGlVQjlmRE05WFZzOHEwNDkwbFZHUFd3dFRjdTFXVE9XclRsNG56TGZKNjVucDVkVjdDY1F6UWlRMFlyU3pLSHI2WHNYcW9oNS9JQ0dodEthbVQ4a24xdW9McWJ1Y2NVNEZZdEpNd3U1OHllbHFUUFM5SW1LTXNyemdwY3JzbGthUEptNU9hMjZNRURXVGxyU3lXaGNMUE9henNwZWMyNGhNN3RjazdzVUNCMEpKS00xaHVaNkZYOFY3eWdEcXlrd3U4dThvNjB5VmtGNHBaaHNxcUtBRnBrb3NKaEpIKzFzVUdwbHY3NEx0VlV1ZFJiVlhMZStxU2xRcnlFSFJVQUxKQXpBR1pzME1TVmZPd0JWbExSOE1QMHRLdSt5UjI5bko2Y2ZMZzdVRkwvWEVJVVdtczBxcjFRWHNHVnZuWkptcmtzengxRUpOM1FDQnBiOTRqSmtGalZGOXRXbGtXZ0plbEYxQnBzME80Y0djMlVBSkx3SE9YS28wb2pxYTg2WnBRZHp1WXQzVmhLekIveVYxM05KcXdiTFFEZFh6cFF2ajBER0pwODdYTVI5UWNNTjBsQjhNSFNpRk5yUXFsS1EwZHk2VzRPdmU0UG1JdEQ3bDFINExmSmJVZXBPVWRUdlErZ1pWWW1LZjZLdW9XS254ai9TUVRiQTgvdWdJNll2TTd1MTkwcDVpUW9RZ0ZveExuMktYSit2UFZCOUk0ajlFZGE0TFVBSDk0VVNZSGpHeGtWaFJGdVRpWWgxaXlNWmovQTA0d2pRc1JpYmNLQndqSHNKQ1B3NEJCSGN2amNlZ2lJd0gwYVVmS3E5Y1RmcWpvcVQzMzZ5ZG5kR0pZdkIxTHhLYzY4VGFrNmkwRHl2dTJsRHpXcURSQmZoSmx5NGkvUlVWTHV5L0JYZFZsZFhhKzUwNFlRenI2N2hzZFIxT3ZFZm8yNitXMjNxT24yNE82OXVDMnB0TURhamRZM0F3aHpEQUsxVkdodU16MnJiVEZpUWo5aUVxSTBnTmFXYVNnaFdwOVpnUlc5NjdmdUxwejZYemwyU2p4ek5UTnlVRHc1aWZyOVhuaHFDV0prZCtBekNwM1JoV0I0Y3p0NVlsay9QSzU3bmZ4OU52Z1AzT2dqOGc2SzMvVnFmS1FwaHZsZU5KckZrdE5QbjFIRkRGZnZPdjFMRDMxODhNYXlHYUduNmFHYjAvc1BGenpMbjV1V3hhZlV4TzNSRUdya3QvM01wKytDb05EZ3R6UTVsUHIwbUxkekpucjFZb29mYlFWQzE2ZUhDZFpPdTZ2RjIyWVlBWnNQa2hVSDV6RmptZGdwdGc4Mk53NmZzOGdNNWRUNjljRFJ6NWRaM3FkRXVSYTdUNFN4Und3ay90YWxCZVpsaVlxeXE4V2RBdzlMM2owbmZ6cVAxWStrNkxGcWdnVHcvQ1NJZkxvNmtIMXpLWFRvdUhUZ3JUVDlJM3pzc1RZN3RLQkZPT2NoYWhiczE0ZlhGTlZpOVc4ZHFJUjFpb2hyaDFobi9hOXpPY0QzNVdCc21MZjRWd1plTldmdzdVVEtESllVS2VVaHhwMlJ5U3A1WUxOM0tjQUM0SDIxbjZhVWtlR2hkK2dweE9zclkzT1h2ZXhsUUtKREFIUEQrLzJwek5UL28vRzk1NW5KMmVVdytjQTJKSEQ4b0hidWtHaHFrQW9IazRhbUNyZ0Nhdm5kVEdwL01IdmdjeWpaSXNYS1hyNkptUzJQQUxVUTFkV0NqazlMNGJHYmdDL1JKc1IyU1duRyswQ1Q4TGhZUTR0dnkzeXUzeTA4aUZ1ZUNNRzFjTklUUkViSFRZaWx1enE3Y0xjc0h4bDQyb0M3ZkRxR3J5K2R6Kzl4dWx3dkZSUXVNdnlDWHpzc0tpSkJxOGduV2dvVVRiSGVuWmZWOUg0di9EV2lMN1k1MTg5c2RkQUZPelhwcjhwTkx6U1VXNFJnTS90dlF2cVJORVZwTzNLcWU5SmJJSi9wWGN5T1ZUZGxyWjRDVmE3a1J4b2xzTk1EM1ZYRW5xdnc5YWw3K1RwMHNXck5qbFVsYXRhSnh1ZlN6cmU2dlpXOThsYmsyL0lnekh5ZUtFMDVYR1RVSGM2Z01JVjR3SENkRzJKOWdDSHJGVmZseEhkVnJvdjVQYkhBbFg5YmJWazJzTmF2YTdRNzRXV0ZFUmdoMjRSNDMyV1VsTzU2ME9UVUY4L24rejhGbVNyV2p0NWxhWXo0cUU4a256a1JWejN4NS8zTXdYYjZNMGx1dlVIVTlxZ0dkVDlxQVJXMTFsZUZhWmx5NWdHQktESzk1S1lHVjVHOS9mMDAvcHVKaTBxQVc0Y3A2MFlSN2JSN0tUYUZxVUZ0VmpCMjUxRno2M2tqMnlCMjRrUVpuTU55M0ZjYy9JVWk0d3JwTU9KVW5MMXhSRXF0MDBZNVdwWVVEMHNoa2RtZ0k3WEZjbmlUY2tDSmJwYW5oekxWQmFTNGx6WTdtem4vZXdSaWVyblUxKzQ5aE85ZWRvS01zVEhLRTcrMU9SaUpDTU1HeU1iUllLeDhDZklKaEU1MFdIS3pDY3FFd1VJSEM0UUdhOFpFSUZ3dDFXbUs4cGRxcHExSU1SK200NElEbGlXVjJ4QU9kWmlKS09PSGloZitVbVdBb3Q1ZXdFMUNKdWtqQ1NicGNMcmVaWkFnU3QwTkI1Q09jSGpQRmtLVGQ3ZldRcEE4ZW9xU1o0RkJ6TThsNTNGNnpzNXVnN0FTOEJ5ejBUY0Q3S0tlYkpUeUJvSThORUM2NDJVenR4UHVjaEpObXlJQ1RKR2dDOXdSSU03bmZGWGo5VFZlYzdIUHZmdjFkVi96ZGY3amkvYSthWFN5dUNoSDJoMjE3M2pXVGd0aHJkdllRTGpmbGRSRStqNHVpZkdaWFdRTVlQNnJmZ1V5S3RiYUNmU0FyRU1PZEZnTEhONk1qWmRYS2ZzYndySzYwSTdYU0RtYkltUCs3Z256NTF0QzJzVmkrMWFPOUU1MFA5Tk5obmtlMkJTZG9iOWpEODVFOVhOeG9WRjdEcktvM1paV1lrVFcxR0orVG9kaTdjMHcrc3BDOWMwRTZQaXBOM0tJS095TE5hTXRTYzJDWTJYMm9PSFhoRkVFUUxpZE9VYmc5eEhXM3QreU1pR3dpUm91c2NtaGZFYkMwOURJYWY2VlRuZDB2SnBLQ3FDbGZXU1d5RnBVb0grVlZWREp0ckl4Uldua3B3Ly9GeW5ZMWlmSlNoRkxKZzZoS0VNWHRZbldxZk5wNEdUYktGd1lNNFlyZGorTGlLbEhGQXpvMlEvYWZHUjJEdkM4M2NralpwOVk5NjNhTVZWRXZWUFk1SkEydzZ0VS9tQUFVN1k0cDd0NnAvVGZsKzRzNlZxR3V4dmZ5WkhwUEk5UHp4VDJVT3YzUnVjSm5RNEFvN3BIVmNJQ096ZytybnBvYlNwSEpJcksxMXJQekdnN0lkZE9tQ2FMV0VsVGhqTFQ2UWFqTzFocStzNGpmVWZQSldFM0hYeUNyc1ZTV3F5anJTWnhiTkpWS2M2ODErU1duRjZzY1VRQjBjeW0wWnkzb1I5aGszbGdLN1MxQy8wUmJ6UzlxMjNDci9CbksrdUtoZDJsMlVEaDYrUkVMZm9PdTU2TmtGeHUweE9CL25lMGlodVFtQUFBPWSOwwTGksggvSMREp3BM0KnZ8k7MQ==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./grace_church_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./grace_church_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./grace_church_files/ScriptResource(1).axd" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAmqXr8vZiwAht9a3atEVTMouGB1nf7ugUUPECcOA/J+kapPU2dN5AlccPda7OkwB4zciQYzSO26PdbXX4ZFwRfZ46CHhstThmWCGIar2g5MY4BTm4l8czHBv4fYqHddDJYurlmlxD3vDzukN8SE91Kh1AUrHZtlG/MMLi8C281z/SSF1NNK8lbWPaZn2qwO+/U6yYaMr3PYJzOklJ/abzDTjq9/jg==">
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div class="page_wrapper">
+        <div class="header">
+
+            <div class="wrp-deco top"></div>
+            <div class="header_top">
+                
+   <div class="testop"></div>
+   <div class="testop2"></div>
+
+            </div><!-- /.header_top -->
+            
+            <!-- ↓導覽列↓ -->
+            <div class="navbar" role="navigation">
+                
+<!--uc:nav-->
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        //yamm3樣式一 liclass: minwidth 讓主選單li 變為static  
+        $('.navbar-nav li.minwidth').parents(".dropdown_submenu").addClass("pos_static");
+        $('.hover_r_sider').children('ul').addClass("dropdown-menu sub-menu");
+        $('ul.dropdown-menu ul.dropdown-menu').parent().addClass('dropdown_submenu');
+        //滑動模式
+        
+        $(function () {
+            ($(window).width() > 750) ? ho_visable() : removerhover();
+            $(window).resize(function (e) { ($(window).width() > 750) ? ho_visable() : removerhover(); });
+        });
+        //點選模式
+        
+           //點選模式
+        $('.navbar-collapse').on('shown.bs.collapse', function () {
+            if ($(window).width() < 768) {
+                $(".navbar-collapse").css({
+                    'overflow-y': 'auto',
+                    'overflow-x': 'hidden',
+                    'height': $(window).height() - $(".navbar-header").height()
+                 });
+            }
+        });
+    });
+
+    //滑動模式 
+    function ho_visable() {
+        $('.hover_r_sider').children('ul').addClass("dropdown-menu sub-menu");
+        $('.dropdown_submenu .dropdown-toggle').removeAttr("data-toggle");
+        $(".dropdown_submenu").hover(
+            function () { $(this).addClass("open"); },
+            function () { $(this).removeClass("open"); }
+        );
+    }
+    //手機版移除滑動
+    function removerhover() {
+        $(".dropdown_submenu").off("hover");
+        $('.dropdown_submenu .dropdown-toggle').attr("data-toggle", "dropdown");
+        $('.hover_r_sider').children('ul').removeClass("dropdown-menu sub-menu");
+    }
+    //點選模式 取消a連結轉為按鈕
+    function trigger() {
+        $('.hover_r_sider').children('ul').addClass("dropdown-menu sub-menu");
+        $(".dropdown-menu > li.hover_r_sider > a.trigger").attr("data-toggle", "dropdown");
+        $('a.trigger').parent('li.hover_r_sider').find('ul').hide();
+    }
+    //恢復a連結 全部顯示
+    function triggeroff() {
+        $('.hover_r_sider').children('ul').removeClass("dropdown-menu sub-menu");
+        $('li.hover_r_sider a.trigger').parent('li.hover_r_sider').find('ul').show();
+        $(".dropdown-menu > li.hover_r_sider > a.trigger").attr("data-toggle", "");
+    }
+</script>
+
+
+
+<div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://www.pthc.org.tw/index.aspx">PTHC屏東聖教會</a><!-- 網站名稱 or LOGO -->
+
+                        
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            - MENU -
+            </button>
+                        
+        </div><!-- /.navbar-header -->
+                        
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+            
+                    <li id="ctl00_nav_01_Repeater1_ctl00_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl00_menu" href="http://www.pthc.org.tw/"><span class="txt-tw">首頁</span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl00$page_num" id="ctl00_nav_01_Repeater1_ctl00_page_num">
+                        
+                        
+                    </li>
+                
+                    <li id="ctl00_nav_01_Repeater1_ctl01_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl01_menu" class="dropdown-toggle" val="認識我們" href="http://www.pthc.org.tw/page/about/index.aspx?kind=12"><span class="txt-tw">認識我們</span><span class="caret"></span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl01$page_num" id="ctl00_nav_01_Repeater1_ctl01_page_num" value="12">
+                        
+        <ul class="dropdown-menu dropdown-menu13">
+            
+    
+       <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=14">成長故事</a>
+            
+        </li>
+    
+       <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2027">未來展望</a>
+            
+        </li>
+    
+       <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2030">教會歷史</a>
+            
+        </li>
+    
+        </ul>
+    
+
+                        
+                    </li>
+                
+                    <li id="ctl00_nav_01_Repeater1_ctl02_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl02_menu" class="dropdown-toggle" val="最新訊息" href="http://www.pthc.org.tw/page/news/index.aspx"><span class="txt-tw">最新訊息</span><span class="caret"></span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl02$page_num" id="ctl00_nav_01_Repeater1_ctl02_page_num">
+                        
+        <ul class="dropdown-menu dropdown-menu14">
+            
+    
+         <li class="">
+         
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=8">最新消息</a>
+            
+        </li>
+    
+         <li class="">
+         
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=10">主日信息</a>
+            
+        </li>
+    
+         <li class="">
+         
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=12">教會活動</a>
+            
+        </li>
+    
+         <li class="">
+         
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=14">媒體報導</a>
+            
+        </li>
+    
+        </ul>
+    
+
+                        
+                    </li>
+                
+                    <li id="ctl00_nav_01_Repeater1_ctl03_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl03_menu" class="dropdown-toggle" val="牧區/小組" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2017"><span class="txt-tw">牧區/小組</span><span class="caret"></span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl03$page_num" id="ctl00_nav_01_Repeater1_ctl03_page_num" value="2017">
+                        
+        <ul class="dropdown-menu dropdown-menu25">
+            
+    
+       <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2019">摩西牧區</a>
+            
+        </li>
+    
+       <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2021">以利亞牧區</a>
+            
+        </li>
+    
+       <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2039">約書亞牧區</a>
+            
+        </li>
+    
+       <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2049">學青團契</a>
+            
+        </li>
+    
+        </ul>
+    
+
+                        
+                    </li>
+                
+                    <li id="ctl00_nav_01_Repeater1_ctl04_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl04_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2024"><span class="txt-tw">兒童主日學</span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl04$page_num" id="ctl00_nav_01_Repeater1_ctl04_page_num" value="2024">
+                        
+                        
+                    </li>
+                
+                    <li id="ctl00_nav_01_Repeater1_ctl05_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl05_menu" class="dropdown-toggle" val="相簿" href="http://www.pthc.org.tw/page/album/index.aspx"><span class="txt-tw">相簿</span><span class="caret"></span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl05$page_num" id="ctl00_nav_01_Repeater1_ctl05_page_num">
+                        
+      <ul class="dropdown-menu dropdown-menu16">
+           
+    
+        <li class="">
+            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=13">教會活動-一起愛這個家</a>
+            
+        </li>
+    
+        <li class="">
+            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=14">長青-喜樂的心乃是良藥！</a>
+            
+        </li>
+    
+        <li class="">
+            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=18">兒童牧區-讓孩子到我這裡來</a>
+            
+        </li>
+    
+        <li class="">
+            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=20">學青-就是要這Young！</a>
+            
+        </li>
+    
+        </ul>
+    
+
+                        
+                    </li>
+                
+                    <li id="ctl00_nav_01_Repeater1_ctl06_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl06_menu" href="http://www.pthc.org.tw/page/video/index.aspx"><span class="txt-tw">影音</span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl06$page_num" id="ctl00_nav_01_Repeater1_ctl06_page_num">
+                        
+                        
+                    </li>
+                
+                    <li id="ctl00_nav_01_Repeater1_ctl07_li" class="dropdown_submenu">
+                        <a id="ctl00_nav_01_Repeater1_ctl07_menu" href="http://www.pthc.org.tw/page/calendar/index.aspx"><span class="txt-tw">行事曆</span></a>
+                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl07$page_num" id="ctl00_nav_01_Repeater1_ctl07_page_num" value="0">
+                        
+                        
+                    </li>
+                
+        </ul>
+
+            <!-- Small button group -->
+            
+
+            <ul class="sub-nav list-inline">
+                <li id="ctl00_nav_01_b1" class="b1"><a href="http://www.pthc.org.tw/">首頁</a></li>
+                
+                <li id="ctl00_nav_01_b3" class="b3"><a id="ctl00_nav_01_Facebook" href="https://www.facebook.com/PTHC333" target="_blank">Facebook</a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCAzKhZz84KVpU2ztn2rSFKA/videos" target="_blank">youtube</a></li>
+                <li class="mail hidden"><a href="mailto:pthc333@gmail.com">mail</a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->   
+</div><!-- /.container -->
+
+            </div><!-- /.navbar -->
+            <!-- ↑導覽列↑ -->
+
+            <!-- ↓Banner↓ -->
+            <div id="ctl00_banner" class="banner">
+                   
+    
+<!--uc:banner-->
+<!-- bxslider -->
+<script type="text/javascript" src="./grace_church_files/jquery.bxslider.js.下載"></script>
+<link href="./grace_church_files/jquery.bxslider.css" rel="stylesheet">
+<script>
+    $(document).ready(function () {
+        $('.banner .bxslider').bxSlider({
+            mode: 'horizontal',  //切換的模式：'horizontal'(左右切換), 'vertical'(上下切換), 'fade'(淡入淡出)
+            speed: 2000, //切換的速度
+            auto: true,  //是否自動播放
+            pause: 8000,  //每張圖停留的時間
+            controls: true,
+            pager: true
+        });
+    });
+</script>
+             
+<div class="container">
+    <!-- <img src="http://www.tmgc.org.tw/image/layout_set_logo?img_id=7617641&t=1630134651370"> -->
+    <div class="wrp_frame border-LT"></div>
+    <div class="wrp_frame border-CT"></div>
+    <div class="wrp_frame border-RT"></div>
+    <div class="wrp_frame border-LM"></div>
+    <div class="wrp_frame border-RM"></div>
+    <div class="wrp_frame border-LB"></div>
+    <div class="wrp_frame border-CB"></div>
+    <div class="wrp_frame border-RB"></div>
+    <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 616px;"><ul class="bxslider" style="width: 515%; position: relative; transition-duration: 0s; transform: translate3d(-986px, 0px, 0px);"><li id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerItem" class="item bx-clone" style="background-image: url(./grace_church_files/201905161504400.jpg); float: left; list-style: none; position: relative; width: 986px;">
+                    <a id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerlink"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerImgBig" class="img_big" src="./grace_church_files/201905161504400.jpg" style="border-width:0px;"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerImgSmall" class="img_small" src="./grace_church_files/201905161449061.jpg" style="border-width:0px;"></a>
+                </li>
+        
+                <li id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerItem" class="item" style="background-image: url(./grace_church_files/202108101900240.jpg); float: left; list-style: none; position: relative; width: 986px;">
+                    <a id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerlink"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerImgBig" class="img_big" src="./grace_church_files/202108101900240.jpg" style="border-width:0px;"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerImgSmall" class="img_small" src="./grace_church_files/202108101849571.jpg" style="border-width:0px;"></a>
+                </li>
+            
+                <li id="ctl00_banner_holder_banner_bannerRepeater_ctl01_bannerItem" class="item" style="background-image: url(./grace_church_files/201905161505270.jpg); float: left; list-style: none; position: relative; width: 986px;">
+                    <a id="ctl00_banner_holder_banner_bannerRepeater_ctl01_bannerlink"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl01_bannerImgBig" class="img_big" src="./grace_church_files/201905161505270.jpg" style="border-width:0px;"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl01_bannerImgSmall" class="img_small" src="./grace_church_files/201905161450141.jpg" style="border-width:0px;"></a>
+                </li>
+            
+                <li id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerItem" class="item" style="background-image: url(./grace_church_files/201905161504400.jpg); float: left; list-style: none; position: relative; width: 986px;">
+                    <a id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerlink"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerImgBig" class="img_big" src="./grace_church_files/201905161504400.jpg" style="border-width:0px;"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl02_bannerImgSmall" class="img_small" src="./grace_church_files/201905161449061.jpg" style="border-width:0px;"></a>
+                </li>
+               
+    <li id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerItem" class="item bx-clone" style="background-image: url(./grace_church_files/202108101900240.jpg); float: left; list-style: none; position: relative; width: 986px;">
+                    <a id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerlink"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerImgBig" class="img_big" src="./grace_church_files/202108101900240.jpg" style="border-width:0px;"><img id="ctl00_banner_holder_banner_bannerRepeater_ctl00_bannerImgSmall" class="img_small" src="./grace_church_files/202108101849571.jpg" style="border-width:0px;"></a>
+                </li></ul></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="http://www.pthc.org.tw/" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="http://www.pthc.org.tw/" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="http://www.pthc.org.tw/" data-slide-index="2" class="bx-pager-link">3</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="http://www.pthc.org.tw/">Prev</a><a class="bx-next" href="http://www.pthc.org.tw/">Next</a></div></div></div>
+</div>
+
+            </div><!-- /.banner -->
+            <!-- ↑Banner↑ -->
+    
+            <div class="header_ex">
+                
+    
+
+            </div><!-- /.header_ex -->
+
+            <div class="wrp-deco bottom"></div>
+            <div class="wrp-deco avatar"></div>
+        </div><!-- /.header -->
+
+        <div class="main">
+
+            <div class="main_top">
+                
+
+            </div><!-- /.main_top -->
+            
+            <div class="main_content">
+                <div class="container">
+                    <div class="row">
+                        <div id="ctl00_side1" class="side1 hidden">
+                            <div class="wrp-deco top"></div>
+                            <button type="button" class="btn side-toggle collapsed" data-toggle="collapse" data-target="#side1collapse" aria-expanded="false" aria-controls="side1collapse">
+                                <span class="glyphicon glyphicon-list" aria-hidden="true"></span> 次選單
+                                <span class="toggle-icon">
+                                    <span class="glyphicon glyphicon-chevron-down"></span>
+                                    <span class="glyphicon glyphicon-chevron-up"></span>
+                                </span>
+                            </button>
+                            <div class="collapse in" id="side1collapse" style="">
+                                
+        	                    
+
+                                
+                            </div><!-- /.collapse -->
+                            <div class="wrp-deco bottom"></div>                    
+                        </div><!-- /.side1 -->
+                        
+                        <div id="ctl00_content" class="content col-sm-12">
+                            
+    <div class="about-area sec1 row">
+    <div class="container">
+        <div class="col-md-6">
+            
+<!--uc:eZmod_home_recent_news-->
+<div class="wid wid-home-news list-box">
+    <div class="h2"><span class="txt-en">News</span><span class="txt-tw">最新消息</span></div>
+    <a href="http://www.pthc.org.tw/page/news/index.aspx" class="btn-more">more</a>
+    <ul class="txt-list list-unstyled">
+        
+                    <li><a id="ctl00_content_holder_home_recent_news_NewsRepeater_ctl00_subject" href="http://www.pthc.org.tw/page/news/show.aspx?num=94">📢因應疫情 &gt;&gt;8月起聚會型態調整<span>[2021/08/10]</span></a></li>
+            
+                    <li><a id="ctl00_content_holder_home_recent_news_NewsRepeater_ctl01_subject" href="http://www.pthc.org.tw/page/news/show.aspx?num=50">​👋教會奉獻：直接奉獻與匯款轉入專用帳號<span>[2021/06/13]</span></a></li>
+            
+                    <li><a id="ctl00_content_holder_home_recent_news_NewsRepeater_ctl02_subject" href="http://www.pthc.org.tw/page/news/show.aspx?num=38">屏東聖教會 - 清明節「屏聖追思三禮」_2021/4/4<span>[2021/04/04]</span></a></li>
+            
+                    <li><a id="ctl00_content_holder_home_recent_news_NewsRepeater_ctl03_subject" href="http://www.pthc.org.tw/page/news/show.aspx?num=36">4/4 今年的復活節洗禮，你預備好了嗎?<span>[2021/03/24]</span></a></li>
+                
+    </ul>
+</div>
+        </div>
+        <div class="col-md-6">
+            
+<!-- uc:page_unit -->
+<div class="wid wid-page_unit">
+    
+    
+    <div class="editor">
+        <div class="h2"><span class="txt-en">About us</span><span class="txt-tw">關於我們</span></div>
+
+<div class="row">
+<div class="col-md-6">
+<div class="wd"><br>
+屏東聖教會是一個充滿熱情與愛的教會，弟兄姊妹間彼此的關懷、服事、接納、祝福以及小組家庭的連結，陪伴來到教會的朋友「從門外到門內、從信徒到門徒、從得救到得勝」。<br>
+<br>
+歡迎您來參加我們的禮拜及小組、享受肢體相顧的美好，以及南台灣的熱情。</div>
+
+<div class="wd">&nbsp;</div>
+</div>
+
+<div class="col-md-6 pic"><img alt="" src="./grace_church_files/s__99696655.jpg"></div>
+<a class="btn-more" href="http://www.pthc.org.tw/page/about/index.aspx?kind=14">More Info</a></div>
+</div>
+    <!-- /.page_unit -->
+</div>
+<!-- /.wid-page_unit -->
+
+
+        </div>
+   </div>
+</div>
+<div class=" product01 sec1 row">
+    <div class="container">
+        
+<!-- uc:page_unit -->
+<div class="wid wid-page_unit">
+    
+    
+    <div class="editor">
+        <div class="wid wid-home-about">
+<div class="h2"><span class="txt-en">Story</span><span class="txt-tw">教會記事</span></div>
+
+<div class="row itembox">
+<div class="col-md-3">
+<div class="item">
+<div class="pic"><a href="http://www.pthc.org.tw/page/about/index.aspx?kind=2055"><img alt="成長課程" src="./grace_church_files/p1.jpg"></a></div>
+
+<div class="info">
+<p class="title"><a href="http://www.pthc.org.tw/page/about/index.aspx?kind=2055">成長課程</a></p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="item">
+<div class="pic"><a href="http://www.pthc.org.tw/page/video"><img alt="影音" src="./grace_church_files/dsc_0762_(2).jpg"></a></div>
+
+<div class="info">
+<p class="title"><a href="http://www.pthc.org.tw/page/video">影音</a></p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="item">
+<div class="pic"><a href="http://www.pthc.org.tw/page/album"><img alt="相簿" src="./grace_church_files/p2.jpg"></a></div>
+
+<div class="info">
+<p class="title"><a href="http://www.pthc.org.tw/page/album">相簿</a></p>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="item">
+<div class="pic"><a href="http://www.pthc.org.tw/page/calendar"><img alt="行事曆" src="./grace_church_files/p4.jpg"></a></div>
+
+<div class="info">
+<p class="title"><a href="http://www.pthc.org.tw/page/calendar">行事曆</a></p>
+</div>
+</div>
+</div>
+<a class="btn-more home-more" href="http://www.pthc.org.tw/page/about/index.aspx?kind=1">MORE</a></div>
+</div>
+</div>
+    <!-- /.page_unit -->
+</div>
+<!-- /.wid-page_unit -->
+
+
+    </div>
+</div>
+<div class="note-area sec1 row">
+    <div class="container">
+    <div class="col-md-6">
+        
+<div class="wid wid-home-contact contact-box">
+    <div class="h2"><span class="txt-en">Contact us</span><span class="txt-tw">聯絡資訊</span></div>
+    <ul class="list-unstyled">
+        <a href="tel:0228224466"><li class="phone">02-28224466</li></a>
+        <li>週二至週六 09:00~12:00，14:00~18:00</li>
+        <li>112台北市北投區明德路161號</li>
+    </ul>
+</div>
+        </div>
+        <div class="col-md-6">
+            
+<!-- uc:page_unit -->
+<div class="wid wid-page_unit">
+    
+    
+    <div class="editor">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14450.853426827374!2d121.5209274!3d25.1115627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc8df1a97330954d!2z5aSp5q-N5oSf5oGp5aCC!5e0!3m2!1szh-TW!2stw!4v1630158743024!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    <!-- /.page_unit -->
+</div>
+<!-- /.wid-page_unit -->
+
+
+        </div>
+    </div>
+</div>
+
+
+                             
+                        </div><!-- /.content -->
+
+                        <div id="ctl00_side2" class="side2 hidden">
+                            <div class="wrp-deco top"></div>
+                            
+        	                
+
+                            <div class="row">
+
+<!--uc:wid_quickLink-->
+<div class="wid wid-quickLink col-lg-12 col-md-4 col-sm-4">
+    <h3>快速連結</h3>
+    <ul class="nav">
+        
+                <li><a id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl00_LinkA" title="yahoo" href="http://www.yahoo.com.tw/" target="_blank">yahoo</a></li>
+            
+                <li><a id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl01_LinkA" title="海賊懸賞名單3" target="_blank"><img id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl01_LinkImg" src="./grace_church_files/201503111540330.gif" alt="海賊懸賞名單3" style="width:100%;border-width:0px;"></a></li>
+            
+                <li><a id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl02_LinkA" title="海賊懸賞名單2" href="http://www.eztrust.com.tw/" target="_blank"><img id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl02_LinkImg" src="./grace_church_files/201503111539380.gif" alt="海賊懸賞名單2" style="width:100%;border-width:0px;"></a></li>
+            
+                <li><a id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl03_LinkA" title="海賊懸賞名單" target="_blank"><img id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl03_LinkImg" src="./grace_church_files/201503111538310.jpg" alt="海賊懸賞名單" style="width:100%;border-width:0px;"></a></li>
+            
+                <li><a id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl04_LinkA" title="得獎記錄" href="http://demo.eztrust.tw/ezweb/page/about/index.aspx?kind=7" target="_blank">得獎記錄</a></li>
+            
+                <li><a id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl05_LinkA" title="Google" href="https://www.google.com.tw/" target="_blank">Google</a></li>
+            
+                <li><a id="ctl00_ext/widgets/quickLink/quickLink.ascx_side2_bottom_widgets_LinkRepeater_ctl06_LinkA" title="Yahoo" href="https://tw.yahoo.com/" target="_blank">Yahoo</a></li>
+                
+    </ul>
+</div>
+</div>
+                            <div class="wrp-deco bottom"></div>
+                        </div><!-- /.side2 -->
+                    </div><!-- /.row -->
+                    <div id="floating" class="">
+                                              
+                    </div><!-- /#floating -->
+                    <div class="clearfix"><!--計算.main的背景高度用--></div>
+                </div><!-- /.container -->
+            </div><!-- /.main_content -->
+
+            <div class="main_ex">
+                
+
+            </div><!-- /.main_ex -->
+             <div class="gotop"><a href="http://www.pthc.org.tw/#"><span class="txt-en">TOP</span><span class="txt-tw"></span></a></div>
+        </div><!-- /.main -->
+        
+        <div class="footer">
+            <div class="wrp-deco top"></div>
+            
+            <div class="footer_top">
+                <!-- footer_top的固定內容 -->
+                
+<!--uc:sitemap-->
+<div class="sitemap">
+    <ul class="list-inline">
+        
+                <li id="ctl00_sitemap_Repeater1_ctl00_li" class="b1"><a id="ctl00_sitemap_Repeater1_ctl00_menu" href="http://www.pthc.org.tw/"><span class="txt-tw">首頁</span></a></li>
+            
+                <li>|</li>
+            
+                <li id="ctl00_sitemap_Repeater1_ctl02_li" class="b2"><a id="ctl00_sitemap_Repeater1_ctl02_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=12"><span class="txt-tw">認識我們</span></a></li>
+            
+                <li>|</li>
+            
+                <li id="ctl00_sitemap_Repeater1_ctl04_li" class="b3"><a id="ctl00_sitemap_Repeater1_ctl04_menu" href="http://www.pthc.org.tw/page/news/index.aspx"><span class="txt-tw">最新訊息</span></a></li>
+            
+                <li>|</li>
+            
+                <li id="ctl00_sitemap_Repeater1_ctl06_li" class="b4"><a id="ctl00_sitemap_Repeater1_ctl06_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2017"><span class="txt-tw">牧區/小組</span></a></li>
+            
+                <li>|</li>
+            
+                <li id="ctl00_sitemap_Repeater1_ctl08_li" class="b5"><a id="ctl00_sitemap_Repeater1_ctl08_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2024"><span class="txt-tw">兒童主日學</span></a></li>
+            
+                <li>|</li>
+            
+                <li id="ctl00_sitemap_Repeater1_ctl10_li" class="b6"><a id="ctl00_sitemap_Repeater1_ctl10_menu" href="http://www.pthc.org.tw/page/album/index.aspx"><span class="txt-tw">相簿</span></a></li>
+            
+                <li>|</li>
+            
+                <li id="ctl00_sitemap_Repeater1_ctl12_li" class="b7"><a id="ctl00_sitemap_Repeater1_ctl12_menu" href="http://www.pthc.org.tw/page/video/index.aspx"><span class="txt-tw">影音</span></a></li>
+            
+                <li>|</li>
+            
+                <li id="ctl00_sitemap_Repeater1_ctl14_li" class="b8"><a id="ctl00_sitemap_Repeater1_ctl14_menu" href="http://www.pthc.org.tw/page/calendar/index.aspx"><span class="txt-tw">行事曆</span></a></li>
+                   
+    </ul>
+</div>
+
+                
+
+            </div><!-- /.footer_top -->
+            
+            <div class="footer_content">
+                
+<!--uc:footer-->
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-8 col-sm-8">
+    <div class="copyright">Copyrights © 2021 <b>TMGC天母感恩堂</b> All Rights Reserved.</div><!-- /.copyright -->
+
+    <div class="siteinfo">
+        
+        <ul class="list-inline">
+            <li id="ctl00_footer_01_com_tel_li"><label> 電話</label><a id="ctl00_footer_01_com_tel">02-28224466</a></li>
+            <li id="ctl00_footer_01_com_address_li"><label>地址</label>112台北市北投區明德路161號</li>
+            <li id="ctl00_footer_01_com_bstime_li">週二至週六 09:00~12:00，14:00~18:00</li>
+        </ul>           
+    </div><!-- /.siteinfo -->
+    
+<!--uc:eZPowered-->
+<div class="powered" id="eztrust">
+    <a href="http://www.eztrust.com.tw/html/about/index.aspx" target="_blank">網站設計</a>:
+    <a href="http://www.eztrust.com.tw/" target="_blank">藝誠網頁設計</a>
+    <a href="http://church.eztrust.tw/" target="_blank">教會網站設計</a>
+</div>
+          
+    </div>
+            <div class="col-md-4 col-sm-4">
+              <ul class="sub-nav list-inline">
+                <li class="fb"><a href="https://www.facebook.com/pages/%E5%A4%A9%E6%AF%8D%E6%84%9F%E6%81%A9%E5%A0%82/467442426631752/" target="_blank">Facebook</a></li>
+                <li class="youtube"><a href="https://www.tmgc.org.tw/3" target="_blank">youtube</a></li>
+            </ul>
+
+          </div>
+    </div>
+</div><!-- /.container -->
+
+
+
+
+            </div><!-- /.footer_content -->
+
+            <div class="wrp-deco bottom"></div>
+        </div><!-- /.footer -->
+    </div><!-- /.page_wrapper -->
+    </form>
+
+</body></html>
