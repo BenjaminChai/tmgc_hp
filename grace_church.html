@@ -150,15 +150,40 @@ $(this).parent("li").addClass("active");
        
     }
     
+    .header .navbar {
+        background-color: rgb(255, 133, 133);
+    }
+
      /*LOGO*/
     .header .navbar .navbar-header .navbar-brand {
-         background-image: url(./grace_church_files/images/tmgc_logo.png);
-         width: 101px;height: 95px;
+         background-image: url(./grace_church_files/images/tmgc_logo.jpg);
+         width: 100px;height: 100px;
     }
+    .header .navbar .navbar-header .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
     .header .wrp-deco.avatar {
          
-        
-         
+    }
+    .header .navbar .navbar-nav li a {
+        color:rgb(255, 255, 255)
+    }
+    .header .navbar .navbar-nav li ul li a{
+        color:rgb(153, 136, 136)
+    }
+
+
+    .footer {
+        background-color: rgb(255, 133, 133);
+    }
+    .footer_content {
+        background-color: rgb(255, 133, 133);
     }
 </style>
 <script>
@@ -311,27 +336,27 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
                     </li>
                 
                     <li id="ctl00_nav_01_Repeater1_ctl01_li" class="dropdown_submenu">
-                        <a id="ctl00_nav_01_Repeater1_ctl01_menu" class="dropdown-toggle" val="認識我們" href="http://www.pthc.org.tw/page/about/index.aspx?kind=12"><span class="txt-tw">認識我們</span><span class="caret"></span></a>
+                        <a id="ctl00_nav_01_Repeater1_ctl01_menu" class="dropdown-toggle" val="認識我們" href="http://www.pthc.org.tw/page/about/index.aspx?kind=12"><span class="txt-tw">歡迎新朋友</span><span class="caret"></span></a>
                         <input type="hidden" name="ctl00$nav_01$Repeater1$ctl01$page_num" id="ctl00_nav_01_Repeater1_ctl01_page_num" value="12">
                         
         <ul class="dropdown-menu dropdown-menu13">
             
     
        <li class="hover_r_sider">
-            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=14">成長故事</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=14">關於我們</a>
         </li>
-    
        <li class="hover_r_sider">
-            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2027">未來展望</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2027">教會歷史</a>
         </li>
-    
        <li class="hover_r_sider">
-            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2030">教會歷史</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2030">我們的牧師/同工</a>
         </li>
-    
+        <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2030">小組介紹</a>
+        </li>
+        <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl01_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2030">聯絡我們</a>
+        </li>    
         </ul>
     
 
@@ -346,29 +371,23 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
             
     
          <li class="">
-         
             <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=8">最新消息</a>
-            
         </li>
     
          <li class="">
-         
-            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=10">主日信息</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=10">週報</a>
         </li>
     
          <li class="">
-         
-            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=12">教會活動</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=12">禱告RPG</a>
         </li>
     
-         <li class="">
-         
-            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=14">媒體報導</a>
-            
+        <li class="">
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=14">聚會/課程報名</a>
         </li>
-    
+        <li class="">
+            <a id="ctl00_nav_01_Repeater1_ctl02_ext/submenu/sub_news/sub_news.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/news/index.aspx?kind=14">國度代禱消息</a>
+        </li>
         </ul>
     
 
@@ -376,32 +395,33 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
                     </li>
                 
                     <li id="ctl00_nav_01_Repeater1_ctl03_li" class="dropdown_submenu">
-                        <a id="ctl00_nav_01_Repeater1_ctl03_menu" class="dropdown-toggle" val="牧區/小組" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2017"><span class="txt-tw">牧區/小組</span><span class="caret"></span></a>
+                        <a id="ctl00_nav_01_Repeater1_ctl03_menu" class="dropdown-toggle" val="牧區/小組" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2017"><span class="txt-tw">小組/牧區</span><span class="caret"></span></a>
                         <input type="hidden" name="ctl00$nav_01$Repeater1$ctl03$page_num" id="ctl00_nav_01_Repeater1_ctl03_page_num" value="2017">
                         
         <ul class="dropdown-menu dropdown-menu25">
             
     
        <li class="hover_r_sider">
-            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2019">摩西牧區</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2019">愛充滿小組</a>
         </li>
-    
        <li class="hover_r_sider">
-            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2021">以利亞牧區</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2021">愛分享小組</a>
         </li>
-    
        <li class="hover_r_sider">
-            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2039">約書亞牧區</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2039">愛加倍小組</a>
         </li>
-    
        <li class="hover_r_sider">
-            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2049">學青團契</a>
-            
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2049">仁愛小組</a>
         </li>
-    
+        <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2049">和平小組</a>
+        </li>
+        <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2049">愛家小組</a>
+        </li>
+        <li class="hover_r_sider">
+            <a id="ctl00_nav_01_Repeater1_ctl03_ext/submenu/sub_page/sub_page.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/about/index.aspx?kind=2049">青年牧區</a>
+        </li>
         </ul>
     
 
@@ -416,47 +436,33 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
                     </li>
                 
                     <li id="ctl00_nav_01_Repeater1_ctl05_li" class="dropdown_submenu">
-                        <a id="ctl00_nav_01_Repeater1_ctl05_menu" class="dropdown-toggle" val="相簿" href="http://www.pthc.org.tw/page/album/index.aspx"><span class="txt-tw">相簿</span><span class="caret"></span></a>
+                        <a id="ctl00_nav_01_Repeater1_ctl05_menu" class="dropdown-toggle" val="相簿" href="http://www.pthc.org.tw/page/album/index.aspx"><span class="txt-tw">影音資料</span><span class="caret"></span></a>
                         <input type="hidden" name="ctl00$nav_01$Repeater1$ctl05$page_num" id="ctl00_nav_01_Repeater1_ctl05_page_num">
                         
       <ul class="dropdown-menu dropdown-menu16">
            
     
         <li class="">
-            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=13">教會活動-一起愛這個家</a>
+            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl01_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=13">主日崇拜</a>
             
         </li>
     
         <li class="">
-            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=14">長青-喜樂的心乃是良藥！</a>
+            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl02_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=14">見證</a>
             
         </li>
     
         <li class="">
-            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=18">兒童牧區-讓孩子到我這裡來</a>
+            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl03_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=18">其他活動</a>
             
         </li>
-    
-        <li class="">
-            <a id="ctl00_nav_01_Repeater1_ctl05_ext/submenu/sub_album/sub_album.ascx_Repeater2_ctl04_menu" href="http://www.pthc.org.tw/page/album/index.aspx?kind=20">學青-就是要這Young！</a>
-            
-        </li>
-    
         </ul>
-    
-
-                        
                     </li>
                 
-                    <li id="ctl00_nav_01_Repeater1_ctl06_li" class="dropdown_submenu">
-                        <a id="ctl00_nav_01_Repeater1_ctl06_menu" href="http://www.pthc.org.tw/page/video/index.aspx"><span class="txt-tw">影音</span></a>
-                        <input type="hidden" name="ctl00$nav_01$Repeater1$ctl06$page_num" id="ctl00_nav_01_Repeater1_ctl06_page_num">
-                        
-                        
-                    </li>
+
                 
                     <li id="ctl00_nav_01_Repeater1_ctl07_li" class="dropdown_submenu">
-                        <a id="ctl00_nav_01_Repeater1_ctl07_menu" href="http://www.pthc.org.tw/page/calendar/index.aspx"><span class="txt-tw">行事曆</span></a>
+                        <a id="ctl00_nav_01_Repeater1_ctl07_menu" href="http://www.pthc.org.tw/page/calendar/index.aspx"><span class="txt-tw">關於奉獻</span></a>
                         <input type="hidden" name="ctl00$nav_01$Repeater1$ctl07$page_num" id="ctl00_nav_01_Repeater1_ctl07_page_num" value="0">
                         
                         
@@ -603,19 +609,19 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
     
     
     <div class="editor">
-        <div class="h2"><span class="txt-en">About us</span><span class="txt-tw">關於我們</span></div>
+        <div class="h2"><span class="txt-en">Welcom!</span><span class="txt-tw">歡迎新朋友</span></div>
 
 <div class="row">
 <div class="col-md-6">
 <div class="wd"><br>
-屏東聖教會是一個充滿熱情與愛的教會，弟兄姊妹間彼此的關懷、服事、接納、祝福以及小組家庭的連結，陪伴來到教會的朋友「從門外到門內、從信徒到門徒、從得救到得勝」。<br>
+這裡放歡迎新朋友老朋友的溫暖招呼詞<br>
 <br>
-歡迎您來參加我們的禮拜及小組、享受肢體相顧的美好，以及南台灣的熱情。</div>
+歡迎您來參加我們的禮拜及小組，這裡可以放CTA例如表單或電話的連結。</tel>。</div>
 
 <div class="wd">&nbsp;</div>
 </div>
 
-<div class="col-md-6 pic"><img alt="" src="./grace_church_files/s__99696655.jpg"></div>
+<div class="col-md-6 pic"><img alt="" src="./grace_church_files/images/agency-02.jpg" style="margin-top: 20px;"></div>
 <a class="btn-more" href="http://www.pthc.org.tw/page/about/index.aspx?kind=14">More Info</a></div>
 </div>
     <!-- /.page_unit -->
@@ -635,7 +641,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
     
     <div class="editor">
         <div class="wid wid-home-about">
-<div class="h2"><span class="txt-en">Story</span><span class="txt-tw">教會記事</span></div>
+<div class="h2"><span class="txt-en">Link</span><span class="txt-tw">常用連結</span></div>
 
 <div class="row itembox">
 <div class="col-md-3">
@@ -643,7 +649,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 <div class="pic"><a href="http://www.pthc.org.tw/page/about/index.aspx?kind=2055"><img alt="成長課程" src="./grace_church_files/p1.jpg"></a></div>
 
 <div class="info">
-<p class="title"><a href="http://www.pthc.org.tw/page/about/index.aspx?kind=2055">成長課程</a></p>
+<p class="title"><a href="http://www.pthc.org.tw/page/about/index.aspx?kind=2055">主日崇拜</a></p>
 </div>
 </div>
 </div>
@@ -653,7 +659,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 <div class="pic"><a href="http://www.pthc.org.tw/page/video"><img alt="影音" src="./grace_church_files/dsc_0762_(2).jpg"></a></div>
 
 <div class="info">
-<p class="title"><a href="http://www.pthc.org.tw/page/video">影音</a></p>
+<p class="title"><a href="http://www.pthc.org.tw/page/video">周報</a></p>
 </div>
 </div>
 </div>
@@ -663,7 +669,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 <div class="pic"><a href="http://www.pthc.org.tw/page/album"><img alt="相簿" src="./grace_church_files/p2.jpg"></a></div>
 
 <div class="info">
-<p class="title"><a href="http://www.pthc.org.tw/page/album">相簿</a></p>
+<p class="title"><a href="http://www.pthc.org.tw/page/album">禱告RPG</a></p>
 </div>
 </div>
 </div>
@@ -673,7 +679,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 <div class="pic"><a href="http://www.pthc.org.tw/page/calendar"><img alt="行事曆" src="./grace_church_files/p4.jpg"></a></div>
 
 <div class="info">
-<p class="title"><a href="http://www.pthc.org.tw/page/calendar">行事曆</a></p>
+<p class="title"><a href="http://www.pthc.org.tw/page/calendar">每日靈修</a></p>
 </div>
 </div>
 </div>
